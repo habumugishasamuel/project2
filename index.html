@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Repair Shop Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  /* style.css */
+  body {
+  font-family: sans-serif;
+  background-color: #41dd1a;
+  }
+
+  .container {
+  background-color: #131111;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+  }
+
+  h1, h2 {
+  color: #333;
+  }
+
+  section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #e90a0a;
+  border-radius: 5px;
+  }
+
+  ul {
+  list-style-type: none;
+  padding: 0;
+  }
+
+  li {
+  margin-bottom: -205px;
+
+  }
+
+  .navbar {
+  margin-bottom: 20px;
+  background-color: #343a40;
+  }
+
+  .modal-content {
+  border-radius: 10px;
+  }
+
+  .modal-header {
+  border-bottom: 1px solid #dee2e6;
+  }
+
+  .modal-footer {
+  border-top: 1px solid #dee2e6;
+  }
+
+  .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  }
+
+  .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  }
+
+  .btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+  }
+
+  .btn-success {
+  background-color: #0a1d0e;
+  border-color: #0f3618;
+  }
+
+  .btn-success:hover {
+  background-color: #81e097;
+  border-color: #1e7e34;
+  }
+
+  .btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  }
+
+  .btn-info:hover {
+  background-color: #0e3d44;
+  border-color: #0b3b42;
+  }
+
+  .btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  }
+
+  .btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  }
+
+  .btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+  }
+
+  .btn-dark:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, .05);
+  }
+
+  .table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, .075);
+  }
+
+  /* Example card styles */
+  .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+  transform: translateY(-5px);
+  }
+
+  .card-body {
+  padding: 1rem;
+  }
+
+  .card-title {
+  margin-bottom: 0.75rem;
+  }
+  .navbar2-Nav{
+    background-color: #007bff;
+  }
+  </style>
+ </head>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Auto Repair Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customers.html">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobs.html">Service & Job Management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking & Tracking</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+   
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .image-box {
+      width: 30%;
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery" a href="">
+    <div class="image-box">
+      <a href=sevicex.html>
+        <img src="imgs/!.jpeg" alt="Car">
+        <div class="description">car repairing</div>
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="imgs/nm.jpeg">
+        <img src="imgs/nm.jpeg" alt="Car">
+        <div class="description">car washing</div>
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="imgs/$.jpeg">
+        <img src="imgs/$.jpeg" alt="Car">
+        <div class="description">down repairing</div>
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="imgs/@.jpeg">
+        <img src="imgs/@.jpeg" alt="Car">
+        <div class="description">material exchange</div>
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="imgs/bv.jpeg">
+        <img src="imgs/bv.jpeg" alt="Car">
+        <div class="description">new_painting</div>
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="imgs/c.jpeg">
+        <img src="imgs/c.jpeg" alt="Car">
+        <div class="description">motor_repairing</div>
+      </a>
+    </div>
+ </body>
+</html>
+
+  </body>
+  
+
+
+
